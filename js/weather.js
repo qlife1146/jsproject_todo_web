@@ -16,7 +16,7 @@ function onGeoSuccess(position) {
             city.innerText = data.name + "의 날씨";
             weather.innerText = data.weather[0].description + " / ";
             tem.innerText = `${data.main.temp} ℃`;
-            img.style.backgroundImage = `url('http://openweathermap.org/img/wn/${data.weather[0].icon}.png')`;
+            img.style.backgroundImage = `url('https://openweathermap.org/img/wn/${data.weather[0].icon}.png')`;
         });
 
     console.log(fetch(url));
