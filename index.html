@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            rel="stylesheet"
+            href="css/style.css"
+        />
+        <title>Document</title>
+    </head>
+    <body>
+        <section id="center">
+            <div id="clock"><h2 id="clock">00:00:00</h2></div>
+            <div id="name">
+                <h1
+                    id="greeting"
+                    class="hidden"
+                ></h1>
+            </div>
+            <form
+                class="hidden"
+                id="login-form"
+            >
+                <input
+                    required
+                    maxlength="15"
+                    type="text"
+                    placeholder="What's your name?"
+                />
+            </form>
+            <div id="writeToDo">
+                <form id="todo-form">
+                    <input
+                        type="text"
+                        placeholder="Write a your schedule."
+                    />
+                </form>
+
+                <div id="todo-div">
+                    <span>◈ To-Do List</span>
+                    <ul id="todo-list"></ul>
+                </div>
+            </div>
+        </section>
+        <div id="quote">
+            <span></span><br />
+            <span></span>
+        </div>
+        <div id="weather">
+            <div>
+                <span></span>
+                <br />
+                <span></span>
+                <span></span>
+            </div>
+            <img id="icon" />
+        </div>
+
+        <form id="reset-form">
+            <button id="reset">reset</button>
+        </form>
+        <script src="js/app.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/reset.js"></script>
+        <!--로그오프를 위한 리셋 버튼 추가-->
+        <script src="js/weather.js"></script>
+    </body>
+</html>

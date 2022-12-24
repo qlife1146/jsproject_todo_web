@@ -1,0 +1,149 @@
+.hidden {
+	display: none;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+html,
+body {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#center {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#clock {
+	font-size: 10em;
+	font-weight: bold;
+}
+
+#greeting {
+	font-size: 3em;
+	margin-bottom: 20px;
+}
+
+#login-form>input {
+	appearance: none;
+	background: none;
+	border: none;
+	border-bottom: 2px double black;
+	color: black;
+	font-size: 20px;
+}
+
+
+#todo-form>input {
+	appearance: none;
+	background: none;
+	border: none;
+	border-bottom: 2px double black;
+	color: black;
+	font-size: 30px;
+}
+
+#todo-form>input::placeholder {
+	opacity: 70%;
+}
+
+#todo-form>input:focus,
+#todo-form>input:active {
+	outline: none;
+	font-size: 40px;
+	transition: font-size 0.5s
+		/* 선택 해제할 때는 애니메이션이 작동하지 않음 ;ㅅ; */
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+#todo-div {
+	position: absolute;
+	top: 100px;
+	left: 100px;
+	border: 1px solid black;
+	padding: 5px;
+}
+
+#todo-div>span {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.list {
+	margin-bottom: 20px;
+}
+
+.listButton {
+	margin-right: 10px;
+	cursor: pointer;
+	appearance: none;
+	border-radius: 10px;
+	text-align: center;
+	border: 0;
+	border-radius: 5px;
+}
+
+#weather {
+	position: absolute;
+	font-size: 20px;
+	top: 25px;
+	right: 35px;
+	text-align: right;
+}
+
+#weather>div {
+	display: inline-block;
+}
+
+#icon {
+	height: 50px;
+	width: 50px;
+	background-repeat: no-repeat;
+	border: 0;
+}
+
+#quote {
+	position: absolute;
+	bottom: 25px;
+	left: 25px;
+	text-align: left;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#reset {
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+}
