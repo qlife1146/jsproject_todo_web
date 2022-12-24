@@ -4,7 +4,7 @@ const todaysImage = images[Math.floor(Math.random() * images.length)];
 const bgImage = document.querySelector("body");
 // const bgImage = document.createElement("img");
 // bgImage.src = `img/${todaysImage}`;
-bgImage.style.backgroundImage = `url(./img/${todaysImage})`;
+bgImage.style.backgroundImage = `url(img/${todaysImage})`;
 // bgImage.id = "bgImage";
 // document.body.appendChild(bgImage);
 console.log();
